@@ -10,5 +10,9 @@ public class MyCollectionApplication {
         SpringApplication.run(MyCollectionApplication.class, args);
     }
 
+    {
+
+    }
+
 }
 

@@ -41,7 +41,7 @@ public class MyCollectionApp {
         int elementsIndex = 0;
         System.out.println("Get element with index " + elementsIndex);
         String valueOfElement = myCollection.getElement(elementsIndex);
-        System.out.println("Element with index " + elementsIndex + ": " + valueOfElement+ "\n");
+        System.out.println("Element with index " + elementsIndex + ": " + valueOfElement + "\n");
 
         //get last element - index: (size - 1)
         elementsIndex = myCollection.collectionSize() - 1;
