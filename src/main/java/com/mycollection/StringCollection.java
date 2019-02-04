@@ -53,6 +53,7 @@ public class StringCollection {
         Element tmp = collectionHead;
         if (collectionHead.getValue().equals(s)) {
             collectionHead = collectionHead.getNext();
+            collectionHead.setPrev(null);
         }
         while (tmp != null) {
             if (tmp.getValue().equals(s)) {
@@ -65,6 +66,8 @@ public class StringCollection {
                     next.setPrev(prev);
                 }
                 System.out.println("Element \"" + s + "\" - has been removed\n" + this.toString());
+                tmp.setPrev(null);
+                tmp.setNext(null);
                 return true;
             }
             tmp = tmp.getNext();
